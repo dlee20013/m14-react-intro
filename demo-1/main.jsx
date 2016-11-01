@@ -1,6 +1,6 @@
-// Main.jsx file
+/Main.jsx file
 
-// Simple ListItem component for showing an <li>
+Simple ListItem component for showing an <li>
 var MyComponent = React.createClass({
     render:function() {
         var text1 = "hello!";
@@ -16,7 +16,7 @@ var MyComponent = React.createClass({
     }
 });
 
-// Render your component in the `main` section
+Render your component in the `main` section
 ReactDOM.render(<MyComponent/>,
     document.querySelector('main')
 );
