@@ -1,15 +1,6 @@
 // Main.jsx file
 
 // Create a simple component
-    // In your render function...
-
-            // Return div with two paragraphs
-
-// Render your component in the `main` section
-
-// Main.jsx file
-
-// Create a simple component
 var MyComponent = React.createClass({
     render:function(){
         return(
@@ -22,7 +13,6 @@ var MyComponent = React.createClass({
 });
 
 // Render your component in the `main` section
-ReactDOM.render(<MyComponent name="Davin" interest="Badminton"/>,
+ReactDOM.render(<MyComponent name="Mike" interest="Music"/>,
     document.querySelector('main')
 );
-

@@ -10,49 +10,32 @@ var employeeData = [
 
 // Simple ListItem component for showing an <li>
 var Employee = React.createClass({
-    
     render:function() {
-
         return(<tr className={this.props.title}>
-        
             <td>{this.props.name}</td>
-            
             <td>{this.props.title}</td>
-
             <td>{this.props.salary}</td>
         </tr>)
     }
 });
 
-// Employee Tablesss
-
+// EmployeeTable
 var EmployeeTable = React.createClass({
-
     render:function() {
-
         return(
-
             <div>
-
                 <table>
-
                     <tbody>
-                    
                         <tr>
                             <th>Name</th>
                             <th>Title</th>
                             <th>Salary</th>
                         </tr>
                         {this.props.data.map(function(d, i){
-
                             return <Employee key={'employee-' + i}
-
                                              name={d.name}
-
                                              salary={d.salary}
-
                                              title={d.title}
-
                                 />
                         })}
                     </tbody>
@@ -62,7 +45,7 @@ var EmployeeTable = React.createClass({
     }
 });
 
-// `main` section
+// Render your component in the `main` section
 ReactDOM.render(<EmployeeTable data={employeeData}/>,
     document.querySelector('main')
 );
